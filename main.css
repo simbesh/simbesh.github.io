@@ -1,0 +1,69 @@
+#hello {
+    font-family: "Source Sans Pro";
+    background: #fca985;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    font-size: 15vw;
+    width: 55vw;
+    margin: auto;
+    margin-top: 0.5em;
+
+    transform: skew(30deg);
+}
+
+#hello-text {
+    transform: skew(-30deg);
+}
+
+#subtitle {
+    font-family: "Source Sans Pro";
+    background: #fca985;
+    width: 40vw;
+    color: #fff;
+    padding: 1px;
+    margin: auto;
+    margin-top: 2em;
+    justify-content: center;
+    text-align: center;
+
+    transform: skew(30deg);
+}
+#subtitle-text {
+    transform: skew(-30deg);
+}
+
+#socials {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fb-icon {
+    padding-right: 30px;
+}
+
+#fb-icon-svg {
+    fill: #fca985;
+    display: inline-block;
+}
+
+#gh-icon {
+}
+
+#gh-icon-svg {
+    fill: #fca985;
+    display: inline-block;
+}
+
+#fb-icon-svg:hover {
+    fill: #486ab0;
+}
+
+#gh-icon-svg:hover {
+    fill: #24292d;
+}
