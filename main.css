@@ -4,12 +4,23 @@
     color: #fff;
     justify-content: center;
     text-align: center;
-    font-size: 15vw;
-    width: 65vw;
+    font-size: 25vw;
+    width: 80vw;
+    max-width: 690px;
+    max-height: 239px;
     margin: auto;
     margin-top: 0.5em;
 
     transform: skew(30deg);
+}
+
+@media screen and (min-width: 750px) {
+    #hello {
+        font-size: 188px;
+    }
+    #subtitle {
+        max-width: 440px;
+    }
 }
 
 #hello-text {
@@ -19,16 +30,26 @@
 #subtitle {
     font-family: "Source Sans Pro";
     background: #fca985;
-    width: 46%;
+    width: 60%;
     color: #fff;
     padding: 1px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin: auto;
     margin-top: 2em;
     justify-content: center;
     text-align: center;
-    font-size: 2vw;
+    font-size: 1em;
 
     transform: skew(30deg);
+}
+
+@media screen and (max-width: 500px) {
+    #subtitle {
+        padding: 0px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
 }
 #subtitle-text {
     transform: skew(-30deg);
