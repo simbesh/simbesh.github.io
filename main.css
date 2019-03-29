@@ -5,7 +5,7 @@
     justify-content: center;
     text-align: center;
     font-size: 15vw;
-    width: 55vw;
+    width: 65vw;
     margin: auto;
     margin-top: 0.5em;
 
@@ -19,13 +19,14 @@
 #subtitle {
     font-family: "Source Sans Pro";
     background: #fca985;
-    width: 40vw;
+    width: 46%;
     color: #fff;
     padding: 1px;
     margin: auto;
     margin-top: 2em;
     justify-content: center;
     text-align: center;
+    font-size: 2vw;
 
     transform: skew(30deg);
 }
