@@ -9,7 +9,10 @@
     max-width: 690px;
     max-height: 239px;
     margin: auto;
-    margin-top: 0.5em;
+    margin-top: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     transform: skew(30deg);
 }
