@@ -163,10 +163,49 @@ input.button:hover:not([disabled]) {
     background-color: #e48d6d;
     transform: translateY(-0.25em);
 }
+button.button {
+    background-color: rgba(252, 169, 133, 1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 16px;
+}
+
+button.button:hover:not([disabled]) {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: #e48d6d;
+    transform: translateY(-0.25em);
+    text-align: center;
+}
 
 input.button[disabled] {
     background-color: #ddd;
     cursor: auto;
+}
+
+.icon {
+    display: inline-flex;
+    align-self: center;
+}
+.icon.baseline {
+    top: 0.125em;
+    position: relative;
+}
+.icon svg,
+.icon img {
+    height: 1em;
+    width: 1em;
+}
+
+.button.bechard-dev-nowhere:hover:hover span {
+    display: none;
+}
+.button.bechard-dev-nowhere:hover:hover:before {
+    content: "Already Here!";
 }
 
 /* Add a background color and some padding around the form */
