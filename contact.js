@@ -1,6 +1,3 @@
-
-console.log("contact.js loaded!")
-
 window.onload = function () {
     registerListeners()
 };
@@ -24,6 +21,7 @@ Message: ${message}`)
 
         const url = `https://api.telegram.org/bot816925224:AAGkot8xPR1aMOSg8Xowpj_DUjK_A-B9HKU/sendMessage?chat_id=386572077&text=${text}`
         const res = await fetch(url)
+        console.log('response :', res.status)
         if (res.status >= 200 || res.status < 300){
             // window.location.href = "/contact-success";
             document.getElementById("contact-container").setAttribute('hidden', '')
