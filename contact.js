@@ -45,7 +45,7 @@ IP: ${ip}
         const url = `https://api.telegram.org/bot816925224:AAGkot8xPR1aMOSg8Xowpj_DUjK_A-B9HKU/sendMessage?chat_id=386572077&text=${text}${options}`
         const res = await fetch(url)
         console.log('response :', res)
-        if (res.status >= 400 || res.status > 300){
+        if (res.status >= 200 && res.status < 300){
             document.getElementById("contact-container").classList.add('d-none')
             document.getElementById("contact-success").classList.remove('d-none')
         } else {
