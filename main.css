@@ -42,10 +42,23 @@
     justify-content: center;
     text-align: center;
     font-size: 1em;
-
     transform: skew(30deg);
 }
+#h-rule {
+    background: #fca985;
+    width: 60%;
+    color: #fff;
+    padding: 1.5px;
+    padding-right: 25px;
+    padding-left: 25px;
+    margin: auto;
+    margin-top: 2em;
+}
 
+.project-container{    
+    font-family: "Source Sans Pro";
+    margin-left: 4vw
+}
 @media screen and (max-width: 500px) {
     #subtitle {
         padding: 0px;
@@ -167,6 +180,15 @@ input.button:hover {
     background-color: rgba(252, 169, 133, 0.5);
     padding: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.portfolio-container{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+    min-width: 80vw;
+    border-radius: 5px;
+    background-color: rgba(252, 169, 133, 0.5);
 }
 
 .contact-response {
