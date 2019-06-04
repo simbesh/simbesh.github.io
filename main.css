@@ -57,7 +57,8 @@
 
 .project-container{    
     font-family: "Source Sans Pro";
-    margin-left: 4vw
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 @media screen and (max-width: 500px) {
     #subtitle {
@@ -177,6 +178,8 @@ input.button:hover {
     align-items: center;
     justify-content: center;
     max-width: 50vw;
+    
+    min-width: 300px;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
     padding: 20px;
@@ -185,11 +188,13 @@ input.button:hover {
 .portfolio-container{
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 30px;
-    
-    min-width: 80vw;
+    margin-bottom: 30px; 
+    min-width: 300px;   
+    max-width: 70vw;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
+    padding: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact-response {
