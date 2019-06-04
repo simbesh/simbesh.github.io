@@ -23,12 +23,11 @@ Message: ${message}`)
         const res = await fetch(url)
         console.log('response :', res.status)
         if (res.status >= 200 || res.status < 300){
-            // window.location.href = "/contact-success";
-            document.getElementById("contact-container").setAttribute('hidden', '')
-            document.getElementById("contact-success").removeAttribute('hidden', '')
+            document.getElementById("contact-container").classList.add('d-none')
+            document.getElementById("contact-success").classList.remove('d-none')
         } else {
-            document.getElementById("contact-container").setAttribute('hidden', '')
-            document.getElementById("contact-error").removeAttribute('hidden', '')
+            document.getElementById("contact-container").classList.add('d-none')
+            document.getElementById("contact-error").classList.remove('d-none')
         }
     });
 }
