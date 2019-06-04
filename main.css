@@ -92,6 +92,9 @@
     fill: #24292d;
 }
 
+.nav-active {
+    border-bottom: 5px solid #fca985;
+}
 .nav {
     font-family: "Source Sans Pro";
     border-width: 1px 0;
@@ -106,14 +109,13 @@
     margin: 0;
     padding: 10px 0;
 }
-.nav li:hover {
-    background: #fca985;
-    color: #fff;
+.nav li:hover {    
+    border-bottom: 5px solid #fca985;
 }
 
 .nav li:hover a {
-    background: #fca985;
-    color: #fff;
+    /* background: #fca985; */
+    /* color: #fff; */
 }
 .nav a {
     display: inline-block;

@@ -19,7 +19,6 @@
         <meta name="theme-color" content="#fca985" />
         <!-- iOS Safari -->
         <meta name="apple-mobile-web-app-status-bar-style" content="#fca985" />
-        <script src="/contact.js"></script>
     </head>
     <body>
         <div id="title">
@@ -30,59 +29,14 @@
         <div id="link-bar">
             <ul class="nav">
                 <li><a href="/">Home</a></li>
-                <li><a href="/portfolio/">Portfolio</a></li>
-                <li class="nav-active"><a href="/contact/">Contact</a></li>
+                <li class="nav-active"><a href="/portfolio">Portfolio</a></li>
+                <li><a href="/contact">Contact</a></li>
             </ul>
         </div>
-        <div class="container" id="contact-container">
-            <form>
-                <label for="fname">First Name</label>
-                <input
-                    type="text"
-                    id="fname"
-                    name="firstname"
-                    placeholder="Your name.."
-                />
-
-                <label for="lname">Last Name</label>
-                <input
-                    type="text"
-                    id="lname"
-                    name="lastname"
-                    placeholder="Your last name.."
-                />
-
-                <label for="email">Email</label>
-                <input
-                    type="text"
-                    id="email"
-                    name="emailaddress"
-                    placeholder="Email"
-                />
-
-                <label for="message">Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Write something.."
-                    style="height:200px"
-                ></textarea>
-
-                <input
-                    type="button"
-                    class="button"
-                    id="submit-button"
-                    value="Submit"
-                />
-            </form>
-        </div>
-        <div class="contact-response d-none" id="contact-success">
-            <p>Thank you!</p>
-            <p>Your message has been delivered successfully.</p>
-        </div>
-        <div class="contact-response d-none" id="contact-success">
-            <p>Oh No! An error has occurred!</p>
-            <p>Please get in touch by emailing: simon@bechard.dev</p>
+        <div id="subtitle">
+            <div id="subtitle-text">
+                <p>Welcome to the personal page of Simon Bechard.</p>
+            </div>
         </div>
         <div id="socials">
             <div id="fb-icon">
