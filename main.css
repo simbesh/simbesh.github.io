@@ -169,6 +169,7 @@ input.button:hover {
 
 /* Add a background color and some padding around the form */
 .container {
+    font-family: "Source Sans Pro";
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 30px;
