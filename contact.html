@@ -36,7 +36,7 @@
         </div>
         <div class="container" id="contact-container">
             <form>
-                <label for="fname">First Name</label>
+                <label for="fname">First Name*</label>
                 <input
                     type="text"
                     id="fname"
@@ -52,7 +52,7 @@
                     placeholder="Your last name.."
                 />
 
-                <label for="email">Email</label>
+                <label for="email">Email*</label>
                 <input
                     type="text"
                     id="email"
@@ -60,13 +60,24 @@
                     placeholder="Email"
                 />
 
-                <label for="message">Message</label>
+                <label for="message">Message*</label>
                 <textarea
                     id="message"
                     name="message"
                     placeholder="Write something.."
                     rows="4"
                 ></textarea>
+
+                <div class="errors d-none" id="errors">
+                    <label for="errors">Errors</label>
+                    <textarea
+                        readonly
+                        id="error-textarea"
+                        name="errors"
+                        placeholder=""
+                        rows="4"
+                    ></textarea>
+                </div>
 
                 <input
                     type="button"
@@ -80,9 +91,10 @@
             <p>Thank you!</p>
             <p>Your message has been delivered successfully.</p>
         </div>
-        <div class="contact-response d-none" id="contact-success">
+        <div class="contact-response d-none" id="contact-error">
             <p>Oh No! An error has occurred!</p>
             <p>Please get in touch by emailing: simon@bechard.dev</p>
+            <p></p>
         </div>
         <div id="socials">
             <div id="fb-icon">

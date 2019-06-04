@@ -55,11 +55,6 @@
     margin-top: 2em;
 }
 
-.project-container{    
-    font-family: "Source Sans Pro";
-    margin-left: 4vw;
-    margin-right: 4vw;
-}
 @media screen and (max-width: 500px) {
     #subtitle {
         padding: 0px;
@@ -123,7 +118,7 @@
     margin: 0;
     padding: 10px 0;
 }
-.nav li:hover {    
+.nav li:hover {
     border-bottom: 5px solid #fca985;
 }
 
@@ -163,9 +158,15 @@ input.button {
     box-shadow: 3px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
-input.button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    cursor: pointer;
+input.button:hover:not([disabled]) {
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    background-color: #e48d6d;
+    transform: translateY(-0.25em);
+}
+
+input.button[disabled] {
+    background-color: #ddd;
+    cursor: auto;
 }
 
 /* Add a background color and some padding around the form */
@@ -174,23 +175,28 @@ input.button:hover {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 30px;
-    min-width: 300px;
-    max-width: 50vw;    
+    min-width: 15rem;
+    max-width: 30rem;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
     padding: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
 }
-.portfolio-container{
+.portfolio-container {
     margin: 0 auto;
     margin-top: 50px;
-    margin-bottom: 30px; 
-    min-width: 300px;   
+    margin-bottom: 30px;
+    min-width: 300px;
     max-width: 70vw;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
     padding: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.project-container {
+    font-family: "Source Sans Pro";
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 .contact-response {
@@ -208,6 +214,10 @@ input.button:hover {
 
 .d-none {
     display: none;
+}
+
+#error-textarea {
+    color: red;
 }
 
 body {
