@@ -58,7 +58,7 @@
 }
 
 #socials {
-    position: fixed;
+    margin-top: auto;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -155,6 +155,10 @@ input.button:hover {
 /* Add a background color and some padding around the form */
 .container {
     margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 50vw;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
@@ -172,4 +176,10 @@ input.button:hover {
     color: #fff;
     padding: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
