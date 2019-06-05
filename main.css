@@ -225,8 +225,8 @@ input.button[disabled] {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 30px;
-    min-width: 300px;
-    max-width: 70vw;
+    min-width: 15rem;
+    max-width: 50rem;
     border-radius: 5px;
     background-color: rgba(252, 169, 133, 0.5);
     padding: 20px;
