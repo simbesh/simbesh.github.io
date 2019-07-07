@@ -2,10 +2,6 @@ window.onload = function () {
     registerListeners()
 };
 
-function storeIP(json) {
-    console.log("My public IP address is: ", json.geobytesipaddress);
-  }
-
 const registerListeners = () => {
     document.getElementById("submit-button").addEventListener("click", async function (event) {
         event.preventDefault()

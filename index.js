@@ -3,10 +3,6 @@ window.onload = function () {
     getIp()
 };
 
-function storeIP(json) {
-    console.log("My public IP address is: ", json.geobytesipaddress);
-  }
-
 const getIp = async () => {
 	const url = "https://canihazip.com/s"
     const res = await fetch(url)
