@@ -5,19 +5,27 @@ window.onload = function () {
 const getIp = async () => {
 	const url = "https://api.ipdata.co/"
     const apiQuery = "?api-key=6a92b73a71b5483a74fd76ee0e5b90027e1492b325064278d9ce33b6"
-    const res = await fetch(url + apiQuery)
-    const resJson = await res.json()
-    sendTelegram(resJson.ip);
+    try {
+        const res = await fetch(url + apiQuery)
+        const resJson = await res.json()
+        sendTelegram(resJson);
+
+    } catch (e) {
+	    console.log("ERR:", e)
+    }
+
 
 };
 
-const sendTelegram = async (ip) => {
+const sendTelegram = async ({ip, city, region, country_name, emoji_flag}) => {
     let userAgent;
     if (navigator)
         userAgent = navigator.userAgent;
     const options = `&parse_mode=HTML&disable_web_page_preview=true`
     const text = encodeURIComponent(`<code>Visitor to bechard.dev!
-IP: ${ip}</code>
+IP: ${ip}
+${city} - ${region}
+${emoji_flag} ${country_name}</code>
 <a href="https://tools.keycdn.com/geo?host=${ip}">Geolocation info</a>
 UA: ${userAgent}
 `)
