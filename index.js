@@ -11,7 +11,14 @@ const getIp = async () => {
         sendTelegram(resJson);
 
     } catch (e) {
-	    console.log("ERR:", e)
+        try {
+            const res = await fetch("https://arby.bechard.dev/api/ping")
+            const resJson = await res.json()
+            sendTelegram(resJson);
+
+        } catch (e) {
+            sendTelegramFail()
+        }
     }
 
 
@@ -27,6 +34,21 @@ IP: ${ip}
 ${city} - ${region}
 ${emoji_flag} ${country_name}</code>
 <a href="https://tools.keycdn.com/geo?host=${ip}">Geolocation info</a>
+UA: ${userAgent}
+`)
+
+    const url = `https://api.telegram.org/bot816925224:AAGkot8xPR1aMOSg8Xowpj_DUjK_A-B9HKU/sendMessage?chat_id=386572077&text=${text}${options}`
+    const res = await fetch(url)
+    console.log('response :', res.status)
+}
+
+const sendTelegramFail = async () => {
+    let userAgent;
+    if (navigator)
+        userAgent = navigator.userAgent;
+    const options = `&parse_mode=HTML&disable_web_page_preview=true`
+    const text = encodeURIComponent(`<code>Visitor to bechard.dev!
+could not get IP</code>
 UA: ${userAgent}
 `)
 
